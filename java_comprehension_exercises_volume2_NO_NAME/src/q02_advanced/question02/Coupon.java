@@ -1,4 +1,4 @@
-package q02_advanced.question01;
+package q02_advanced.question02;
 
 public class Coupon {
 
@@ -44,6 +44,10 @@ public class Coupon {
 
 	public void setDescriptionString(String descriptionString) {
 		this.descriptionString = descriptionString;
+	}
+
+	public static Coupon getInstance(int id, double discountRate, String descriptionString) {
+		return new Coupon(id, discountRate, descriptionString);
 	}
 
 }
